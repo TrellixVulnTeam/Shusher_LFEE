@@ -1,6 +1,6 @@
 require 'discordrb'
 
-bot = Discordrb::Bot.new token: 'ODEwOTEyNDUzNTU4Nzk2MzMx.YCqjEg.aMOckZf-LxDzWsVW00oC0e4UlOU'
+bot = Discordrb::Bot.new token: <%= ENV["SHUSHER_TOKEN"] %>
 
 SHUSH = "\u{1F92B}"
 S = "\u{1F1F8}"
