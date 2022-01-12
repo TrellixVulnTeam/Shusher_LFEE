@@ -9,7 +9,7 @@ POPPER = "\u{1F389}"
 
 bot.message(with_text: /[\WA-Z_]*[A-Z]+[\WA-Z_]*/ ) do |event|
 	message = event.message
-	if event.user.username == "abnoormality" || event.user.username == "boycryptid"
+	if event.user.username == ENV["SHUSH_USER"]
 		message.react SHUSH		
 	else
 		message.react POPPER
